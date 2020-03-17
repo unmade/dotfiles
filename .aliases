@@ -1,0 +1,4 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias cleanpyc='find . -name "*.pyc" -exec rm -f {} \;'
+alias ll="ls -lA"
