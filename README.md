@@ -1,6 +1,6 @@
 # dotfiles
 
-<img src="https://i.imgur.com/pjAaVVE.png" alt="terminal" width="682">
+<img src="https://i.imgur.com/6qWvueW.png" alt="terminal" width="682">
 
 This is a collection of my dotfiles. I try to keep things minimal 
 and since I don't have a lot of dotfiles I manage them with a

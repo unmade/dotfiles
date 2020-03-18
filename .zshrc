@@ -1,3 +1,5 @@
+setopt PROMPT_SUBST
+
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 
@@ -9,8 +11,8 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 
 precmd () {
     __git_ps1 \
-        ${_NEW_LINE-}"%F{blue}%~%f" \
-        $'\n'"%F{8}${VIRTUAL_ENV##*/}${VIRTUAL_ENV+ }%f%F{magenta}❯%f " \
+        ${_NEW_LINE-}"%F{8}%~%f" \
+        $'\n'"%F{magenta}${VIRTUAL_ENV##*/}${VIRTUAL_ENV+ }❯%f " \
         " |%s"
     [[ -v ${_NEW_LINE} ]] || _NEW_LINE=$'\n'
 }
