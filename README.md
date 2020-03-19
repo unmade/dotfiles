@@ -20,6 +20,8 @@ To create symlinks in your home directory run:
 ./install.sh
 ```
 
+> This will create symlink for the dotfiles in the repo
+
 ### Next steps
 
 By default, [.gitconfig](.gitconfig) doesn't contain user section.
