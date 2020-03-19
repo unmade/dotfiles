@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/.idea": true,
+        "**/.vscode": true
+    },
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.startOnNewLine": true,
+    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "python.analysis.memory.keepLibraryLocalVariables": true,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "python.jediEnabled": false,
+    "python.pythonPath": "/usr/local/lib/python3",
+    "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs/",
+    "workbench.colorCustomizations": {
+        "terminal.ansiBlack": "#737373"
+    },
+    "workbench.colorTheme": "Darcula Pycharm with Light GUI"
+}

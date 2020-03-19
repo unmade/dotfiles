@@ -1,0 +1,11 @@
+dbaeumer.vscode-eslint
+garytyler.darcula-pycharm
+lextudio.restructuredtext
+magicstack.MagicPython
+ms-azuretools.vscode-docker
+ms-python.python
+ms-vscode.Theme-TomorrowKit
+njpwerner.autodocstring
+npxms.hide-gitignored
+yzhang.markdown-all-in-one
+zhuangtongfa.material-theme
