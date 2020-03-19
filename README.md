@@ -40,3 +40,11 @@ To get look similar to the screenshot above checkout [in-rainbows] theme for
 macOS Terminal.
 
 [in-rainbows]: https://github.com/unmade/terminal-in-rainbows
+
+## Links
+
+Other dotfiles I liked:
+
+- [anishathalye](https://github.com/anishathalye/dotfiles)
+- [caarlos0](https://github.com/caarlos0/dotfiles)
+- [mathiasbynens](https://github.com/mathiasbynens/dotfiles)
