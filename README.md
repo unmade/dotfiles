@@ -1,6 +1,6 @@
 # dotfiles
 
-<img src="https://i.imgur.com/THAlR98.png" alt="terminal" width="682">
+<img src="https://i.imgur.com/ycSb1qz.png" alt="terminal" width="682">
 
 This is a collection of my dotfiles. I try to keep things minimal 
 and since I don't have a lot of dotfiles I manage them with a
@@ -31,3 +31,10 @@ From time to time you want to update submodules:
 ```bash
 git submodule update --remote --merge
 ```
+
+## Tip
+
+To get look similar to the screenshot above checkout [in-rainbows] theme for 
+macOS Terminal.
+
+[in-rainbows]: https://github.com/unmade/terminal-in-rainbows

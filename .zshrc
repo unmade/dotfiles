@@ -11,7 +11,7 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 
 precmd () {
     __git_ps1 \
-        ${_NEW_LINE-}"%F{8}%~%f" \
+        ${_NEW_LINE-}"%F{black}%~%f" \
         $'\n'"%F{magenta}${VIRTUAL_ENV##*/}${VIRTUAL_ENV+ }❯%f " \
         " |%s"
     [[ -v ${_NEW_LINE} ]] || _NEW_LINE=$'\n'
