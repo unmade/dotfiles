@@ -14,6 +14,9 @@ GIT_PROMPT_URL="https://raw.githubusercontent.com/git/git/master/contrib/complet
 source ${DOTFILES}/vscode/install.zsh
 
 # vim
+mkdir -p ~/.vim/colors
+VIM_EIGHTIES_URL="https://raw.githubusercontent.com/lithammer/vim-eighties/master/colors/eighties.vim"
+curl ${VIM_EIGHTIES_URL} > ~/.vim/colors/eighties.vim
 ln -s ${DOTFILES}/.vimrc ~/.vimrc
 
 # zsh

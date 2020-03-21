@@ -18,14 +18,14 @@ cyan='\e[0;36m'         # Cyan
 white='\e[0;37m'        # White
 
 # Bold Colors
-bblack='\e[1;30m'       # Black
-bred='\e[1;31m'         # Red
-bgreen='\e[1;32m'       # Green
-byellow='\e[1;33m'      # Yellow
-bblue='\e[1;34m'        # Blue
-bpurple='\e[1;35m'      # Purple
-bcyan='\e[1;36m'        # Cyan
-bwhite='\e[1;37m'       # White
+bblack='\e[1;30m'
+bred='\e[1;31m'
+bgreen='\e[1;32m'
+byellow='\e[1;33m'
+bblue='\e[1;34m'
+bpurple='\e[1;35m'
+bcyan='\e[1;36m'
+bwhite='\e[1;37m'
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
