@@ -15,8 +15,9 @@ source ${DOTFILES}/vscode/install.zsh
 
 # vim
 mkdir -p ~/.vim/colors
-VIM_EIGHTIES_URL="https://raw.githubusercontent.com/lithammer/vim-eighties/master/colors/eighties.vim"
-curl ${VIM_EIGHTIES_URL} > ~/.vim/colors/eighties.vim
+mkdir -p ~/.vim/syntax
+ln -sf ${DOTFILES}/.vim/colors/unmade.vim ~/.vim/colors/unmade.vim
+ln -sf ${DOTFILES}/.vim/syntax/python.vim ~/.vim/syntax/python.vim
 ln -sf ${DOTFILES}/.vimrc ~/.vimrc
 
 # zsh
