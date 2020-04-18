@@ -2,7 +2,7 @@ syntax on
 colorscheme unmade
 
 set ruler
-set number
+set relativenumber
 
 let python_highlight_all = 1
 
@@ -11,6 +11,8 @@ set autoindent
 
 set splitbelow
 set splitright
+
+set hlsearch
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -25,3 +27,4 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[5 q"
 let &t_te.="\e[5 q"
 
+autocmd FileType python set omnifunc=pythoncomplete#Complete
