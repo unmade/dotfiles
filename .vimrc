@@ -4,8 +4,6 @@ colorscheme unmade
 set ruler
 set relativenumber
 
-let python_highlight_all = 1
-
 set tabstop=4 shiftwidth=4 expandtab smarttab
 set autoindent
 
@@ -27,4 +25,19 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[5 q"
 let &t_te.="\e[5 q"
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+let python_highlight_all = 1
+autocmd FileType python set omnifunc=python3complete#Complete
+
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'sheerun/vim-polyglot'
+
+Plug 'airblade/vim-gitgutter'
+
+" Initialize plugin system
+call plug#end()

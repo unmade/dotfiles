@@ -10,7 +10,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-set guifont=Hack:h13
+set guifont=Hack:h12
 set guioptions=e
 
 let colors_name = "unmade"
@@ -19,7 +19,7 @@ let colors_name = "unmade"
 " https://github.com/chriskempson/base16-vi
 
 let g:terminal_ansi_colors = ['#8c8c8c', '#f2777a', '#689f59', '#ffcc66',
-      \ '#6699cc', '#cc99cc', '#66cccc', '#c8c8c8', '#7d7d7d', '#f2777a',
+      \ '#6699cc', '#cc99cc', '#66cccc', '#c3beb4', '#7d7d7d', '#f2777a',
       \ '#689f59', '#ffcc66', '#6699cc', '#cc99cc', '#66cccc', '#f2f0ec']
 if has('nvim')
   let g:terminal_color_0 = '#8c8c8c'
@@ -29,7 +29,7 @@ if has('nvim')
   let g:terminal_color_4 = '#6699cc'
   let g:terminal_color_5 = '#cc99cc'
   let g:terminal_color_6 = '#66cccc'
-  let g:terminal_color_7 = '#c8c8c8'
+  let g:terminal_color_7 = '#c3beb4'
   let g:terminal_color_8 = '#7d7d7d'
   let g:terminal_color_9 = '#f2777a'
   let g:terminal_color_10 = '#689f59'
@@ -41,12 +41,12 @@ if has('nvim')
 endif
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-  hi Normal       guifg=#c8c8c8 guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
-  hi Terminal     guifg=#c8c8c8 guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
+  hi Normal       guifg=#c3beb4 guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
+  hi Terminal     guifg=#c3beb4 guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
 
   hi ColorColumn  guifg=NONE    guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
   hi Conceal      guifg=#6699cc guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
-  hi Cursor       guifg=#2d2d2d guibg=#c8c8c8 guisp=NONE    gui=NONE      cterm=NONE
+  hi Cursor       guifg=#2d2d2d guibg=#c3beb4 guisp=NONE    gui=NONE      cterm=NONE
   hi CursorColumn guifg=NONE    guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
   hi CursorLine   guifg=NONE    guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
   hi CursorLineNr guifg=#a09f93 guibg=#393939 guisp=NONE    gui=bold      cterm=bold
@@ -56,7 +56,7 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi DiffDelete   guifg=#f2777a guibg=#393939 guisp=NONE    gui=bold      cterm=bold
   hi DiffText     guifg=#6699cc guibg=#393939 guisp=NONE    gui=bold      cterm=bold
   hi Directory    guifg=#6699cc guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
-  hi EndOfBuffer  guifg=#c8c8c8 guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
+  hi EndOfBuffer  guifg=#c3beb4 guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
   hi ErrorMsg     guifg=#f2777a guibg=#2d2d2d guisp=NONE    gui=NONE      cterm=NONE
   hi FoldColumn   guifg=#66cccc guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
   hi Folded       guifg=#7d7d7d guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
@@ -68,8 +68,8 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi ModeMsg      guifg=#689f59 guibg=NONE    guisp=NONE    gui=bold      cterm=bold
   hi MoreMsg      guifg=#689f59 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi NonText      guifg=#7d7d7d guibg=NONE    guisp=NONE    gui=bold      cterm=bold
-  hi Pmenu        guifg=#c8c8c8 guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
-  hi PmenuSel     guifg=#393939 guibg=#c8c8c8 guisp=NONE    gui=NONE      cterm=NONE
+  hi Pmenu        guifg=#c3beb4 guibg=#393939 guisp=NONE    gui=NONE      cterm=NONE
+  hi PmenuSel     guifg=#393939 guibg=#c3beb4 guisp=NONE    gui=NONE      cterm=NONE
   hi PmenuSbar    ctermbg=248   guibg=Grey
   hi PmenuThumb   ctermbg=15    guibg=White
   hi Question     guifg=#6699cc guibg=NONE    guisp=NONE    gui=bold      cterm=bold
@@ -101,11 +101,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi Delimiter    guifg=#d27b53 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi Error        guifg=#2d2d2d guibg=#f2777a guisp=NONE    gui=NONE      cterm=NONE
   hi Identifier   guifg=#f2777a guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
-  hi Ignore       guifg=#c8c8c8 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
+  hi Ignore       guifg=#c3beb4 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi Include      guifg=#6699cc guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi Keyword      guifg=#cc99cc guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi Label        guifg=#ffcc66 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
-  hi Operator     guifg=#c8c8c8 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
+  hi Operator     guifg=#c3beb4 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi PreProc      guifg=#ffcc66 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi Repeat       guifg=#ffcc66 guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
   hi Special      guifg=#66cccc guibg=NONE    guisp=NONE    gui=NONE      cterm=NONE
@@ -196,15 +196,37 @@ endif
 
 
 " Better python highlighting
-hi pythonFunction      ctermfg=yellow     cterm=bold   guifg=#ffcc66
-hi pythonBuiltin       ctermfg=104                     guifg=#9999cc
-hi pythonDecorator     ctermfg=blue                    guifg=#6699cc
-hi pythonDecoratorName ctermfg=blue                    guifg=#6699cc
-hi pythonException     ctermfg=red                     guifg=#f2777a
-hi pythonExceptions    ctermfg=magenta                 guifg=#cc99cc
-hi pythonClassVar      ctermfg=magenta                 guifg=#cc99cc
-hi pythonConditional   ctermfg=red                     guifg=#f2777a
-hi pythonInclude       ctermfg=red                     guifg=#f2777a
-hi pythonStatement     ctermfg=red                     guifg=#f2777a
-hi pythonDoctest       ctermfg=white                   guifg=#c8c8c8
-hi pythonDoctestValue  ctermfg=black                   guifg=#7d7d7d
+hi pythonFunction        ctermfg=221 guifg=#ffcc66 
+hi pythonFunctionCall    ctermfg=7   guifg=#90b5a7
+hi pythonBuiltin         ctermfg=104 guifg=#9999cc
+hi pythonBuiltinObj      ctermfg=89  guifg=#a25d9b
+hi pythonBuiltinFunc     ctermfg=104 guifg=#9999cc
+hi pythonBuiltinType     ctermfg=104 guifg=#9999cc
+hi pythonDecorator       ctermfg=221 guifg=#ffcc66
+hi pythonDecoratorName   ctermfg=221 guifg=#ffcc66
+hi pythonDottedName      ctermfg=221 guifg=#ffcc66
+hi pythonException       ctermfg=166 guifg=#e47316
+hi pythonExceptions      ctermfg=104 guifg=#9999cc
+hi pythonExClass         ctermfg=104 guifg=#9999cc
+hi pythonClassVar        ctermfg=89  guifg=#a25d9b
+hi pythonConditional     ctermfg=166 guifg=#e47316
+hi pythonInclude         ctermfg=166 guifg=#e47316
+hi pythonImport          ctermfg=166 guifg=#e47316
+hi pythonNone            ctermfg=104 guifg=#9999cc
+hi pythonBoolean         ctermfg=104 guifg=#9999cc
+hi pythonStatement       ctermfg=166 guifg=#e47316 cterm=bold gui=bold
+hi pythonDoctest         ctermfg=7   guifg=#c3beb4
+hi pythonStrFormat       ctermfg=7   guifg=#c3beb4
+hi pythonStrFormatting   ctermfg=209 guifg=#f99157
+hi pythonStrInterpRegion ctermfg=7   guifg=#c3beb4
+hi pythonDoctestValue    ctermfg=0   guifg=#7d7d7d
+hi pythonDocTest2        ctermfg=7 guifg=#c3beb4
+hi pythonNumber          ctermfg=68  guifg=#6897bb
+hi pythonHexNumber       ctermfg=68  guifg=#6897bb
+hi pythonOctNumber       ctermfg=68  guifg=#6897bb
+hi pythonBinNumber       ctermfg=68  guifg=#6897bb
+hi pythonFloat           ctermfg=68  guifg=#6897bb
+hi pythonRepeat          ctermfg=166 guifg=#e47316
+hi pythonString          ctermfg=22
+hi pythonFString         ctermfg=22
+                           
