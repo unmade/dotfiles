@@ -1,5 +1,5 @@
 syntax on
-colorscheme unmade
+set background=dark
 
 set ruler
 set relativenumber
@@ -39,5 +39,12 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'airblade/vim-gitgutter'
 
+Plug 'morhetz/gruvbox'
+
 " Initialize plugin system
 call plug#end()
+
+let g:gitgutter_override_sign_column_highlight = 1
+
+colorscheme gruvbox
+colorscheme unmade
