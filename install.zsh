@@ -2,6 +2,9 @@
 
 DOTFILES=$(dirname ${0:a})
 
+# ctags
+ln -sf ${DOTFILES}/.ctags ~/.ctags
+
 # git
 ln -sf ${DOTFILES}/.gitignore_global ~/.gitignore_global
 ln -sf ${DOTFILES}/.gitconfig ~/.gitconfig

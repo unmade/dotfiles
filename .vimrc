@@ -1,5 +1,27 @@
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'morhetz/gruvbox'
+Plug 'ervandew/supertab'
+Plug 'airblade/vim-gitgutter'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'sheerun/vim-polyglot'
+
+" Initialize plugin system
+call plug#end()
+
 syntax on
+
+let python_highlight_all = 1
+let g:gitgutter_override_sign_column_highlight = 1
+
 set background=dark
+colorscheme gruvbox
+colorscheme unmade
 
 set ruler
 set relativenumber
@@ -22,29 +44,9 @@ let g:netrw_winsize = 25
 " so keep it consistent no matter what
 let &t_ti.="\e[5 q"
 let &t_SI.="\e[5 q"
-let &t_EI.="\e[5 q"
-let &t_te.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[1 q"
 
-let python_highlight_all = 1
-autocmd FileType python set omnifunc=python3complete#Complete
-
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
-
-" Make sure you use single quotes
-
-Plug 'sheerun/vim-polyglot'
-
-Plug 'airblade/vim-gitgutter'
-
-Plug 'morhetz/gruvbox'
-
-" Initialize plugin system
-call plug#end()
-
-let g:gitgutter_override_sign_column_highlight = 1
-
-colorscheme gruvbox
-colorscheme unmade
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set omnifunc=syntaxcomplete
