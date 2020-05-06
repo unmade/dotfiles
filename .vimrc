@@ -25,6 +25,10 @@ colorscheme unmade
 autocmd SessionLoadPost * colorscheme unmade
 
 set ruler
+
+set cursorline
+
+set number
 set relativenumber
 
 set tabstop=4 shiftwidth=4 expandtab smarttab
@@ -34,6 +38,7 @@ set splitbelow
 set splitright
 
 set hlsearch
+set incsearch
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3

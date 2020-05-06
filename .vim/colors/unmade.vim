@@ -27,6 +27,7 @@ hi! link StatusLineTermNC StatusLineNC
 hi Normal   ctermbg=NONE
 hi Terminal ctermbg=NONE
 hi Function guifg=NONE gui=NONE
+hi CursorLineNr cterm=bold gui=bold
 
 hi Conditional  ctermfg=166 guifg=#fe8019 
 hi Label        ctermfg=166 guifg=#fe8019 
@@ -35,6 +36,7 @@ hi Repeat       ctermfg=166 guifg=#fe8019
 hi Statement    ctermfg=166 guifg=#fe8019 
 hi StorageClass ctermfg=166 guifg=#fe8019 
 
+hi cFloat       ctermfg=109 guifg=#83a598
 hi cStructure   ctermfg=166 guifg=#fe8019 
 
 hi! link jsFuncCall GruvboxAqua
