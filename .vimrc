@@ -22,6 +22,7 @@ let g:gitgutter_override_sign_column_highlight = 1
 set background=dark
 colorscheme gruvbox
 colorscheme unmade
+autocmd SessionLoadPost * colorscheme unmade
 
 set ruler
 set relativenumber
@@ -49,4 +50,3 @@ let &t_te.="\e[1 q"
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-set omnifunc=syntaxcomplete

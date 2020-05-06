@@ -1,7 +1,31 @@
 set guifont=Hack:h12
 set guioptions=
 
-hi Normal ctermbg=NONE
+
+let g:terminal_ansi_colors = [
+    \ '#928374',
+    \ '#fb4934',
+    \ '#b8bb26',
+    \ '#fabd2f',
+    \ '#83a598',
+    \ '#d3869b',
+    \ '#8ec07c',
+    \ '#00ff00',
+    \ '#928374',
+    \ '#fb4934',
+    \ '#b8bb26',
+    \ '#fabd2f',
+    \ '#83a598',
+    \ '#d3869b',
+    \ '#8ec07c',
+    \ '#ff0000',
+    \]
+
+hi! link StatusLineTerm   StatusLine
+hi! link StatusLineTermNC StatusLineNC
+
+hi Normal   ctermbg=NONE
+hi Terminal ctermbg=NONE
 hi Function guifg=NONE gui=NONE
 
 hi Conditional  ctermfg=166 guifg=#fe8019 
