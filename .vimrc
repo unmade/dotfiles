@@ -17,17 +17,22 @@ call plug#end()
 syntax on
 
 let python_highlight_all = 1
+
 let g:gitgutter_override_sign_column_highlight = 1
+
+let g:gutentags_cache_dir = expand('~/.vim/ctags/')
 
 set background=dark
 colorscheme gruvbox
 colorscheme unmade
 autocmd SessionLoadPost * colorscheme unmade
 
+set hidden
+
+set spell
+
 set ruler
-
 set cursorline
-
 set number
 set relativenumber
 
@@ -39,6 +44,9 @@ set splitright
 
 set hlsearch
 set incsearch
+
+set nobackup
+set noswapfile
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -52,6 +60,3 @@ let &t_ti.="\e[5 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[1 q"
-
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete

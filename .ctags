@@ -2,6 +2,9 @@
 --exclude=.git
 --exclude=vendor/*
 --exclude=node_modules/*
+--exclude=.mypy_cache/
+--exclude=.tox
+--exclude=.pytest_cache
 --exclude=\*.min.\*
 --exclude=tags
 --exclude=\*.tar.\*

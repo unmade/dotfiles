@@ -1,7 +1,6 @@
 set guifont=Hack:h12
 set guioptions=
 
-
 let g:terminal_ansi_colors = [
     \ '#928374',
     \ '#fb4934',
@@ -45,7 +44,7 @@ hi jsFunction         ctermfg=166 guifg=#fe8019 gui=bold
 hi jsExport           ctermfg=166 guifg=#fe8019 gui=bold
 
 " Better python highlighting
-" Heavily based on JetBrain Darcula
+" Heavily based on JetBrains Darcula
 hi pythonBoolean         ctermfg=104  guifg=#9999cc
 hi pythonBinNumber       ctermfg=68   guifg=#6897bb
 hi pythonBuiltin         ctermfg=104  guifg=#9999cc
