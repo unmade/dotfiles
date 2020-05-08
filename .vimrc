@@ -52,6 +52,8 @@ set incsearch
 set nobackup
 set noswapfile
 
+set listchars=eol:¬,tab:─→,trail:~,extends:>,precedes:<,space:·
+
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
