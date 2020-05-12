@@ -25,6 +25,7 @@ let g:gitgutter_override_sign_column_highlight = 1
 
 let g:gutentags_cache_dir = expand('~/.vim/ctags/')
 
+let g:rainbow_active = 1
 
 set background=dark
 colorscheme gruvbox
@@ -70,15 +71,10 @@ let &t_te.="\e[1 q"
 
 " Set up better completion
 
-set completeopt+=longest,menuone
+set completeopt+=menuone,popup
 
-autocmd FileType *
-    \ if &omnifunc != '' |
-    \     call SuperTabChain(&omnifunc, "<c-p>") |
-    \     call SuperTabSetDefaultCompletionType("<c-x><c-o>") |
-    \ endif
+let g:SuperTabSetDefaultCompletionType = "context"
 
-" disable errors and warnings
 let g:lsp_diagnostics_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 
@@ -88,11 +84,11 @@ let g:lsp_signs_hint = {'text': '»'}
 let g:lsp_signs_information = {'text': '»'}
 
 let g:lsp_highlights_enabled = 1
-let g:lsp_textprop_enabled = 0
+let g:lsp_textprop_enabled = 1
 
 " https://github.com/ervandew/supertab
 if executable('clangd')
-    au FileType c call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+    "au FileType c call SuperTabSetDefaultCompletionType("<c-x><c-o>")
     au User lsp_setup call lsp#register_server({
         \ 'name': 'clangd',
         \ 'cmd': {server_info->[

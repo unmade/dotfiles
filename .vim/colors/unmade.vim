@@ -82,7 +82,12 @@ hi pythonStrFormatting   ctermfg=209  guifg=#f99157
 hi pythonStrInterpRegion ctermfg=NONE guifg=NONE
 hi pythonString          ctermfg=22   guifg=#689f59
 
-" Redefine LSP colors
+" Redefine vim-lsp colors
 hi! link LspErrorText GruvboxRedSign
 hi! link LspWarningText GruvboxYellowSign
 hi! link LspHintText GruvboxAquaSign
+
+hi LspErrorHighlight guisp=#fb4934 gui=undercurl
+hi LspWarningHighlight guisp=#fabd2f gui=undercurl
+hi LspHintText gui=undercurl
+hi LstInformation gui=undercurl
