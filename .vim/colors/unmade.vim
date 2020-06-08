@@ -40,8 +40,17 @@ hi cStructure   ctermfg=166 guifg=#fe8019
 
 hi! link jsFuncCall GruvboxAqua
 hi javaScriptFunction ctermfg=166 guifg=#fe8019 
-hi jsFunction         ctermfg=166 guifg=#fe8019 gui=bold
-hi jsExport           ctermfg=166 guifg=#fe8019 gui=bold
+hi jsFunction         ctermfg=166 guifg=#fe8019 gui=bold term=bold
+hi! link jsArrowFunction GruvBoxFg1
+hi jsExport           ctermfg=166 guifg=#fe8019 gui=bold term=bold
+hi jsExportDefault    ctermfg=166 guifg=#fe8019 gui=bold term=bold
+hi jsClassKeyword     ctermfg=166 guifg=#fe8019 gui=bold term=bold
+hi jsExtendsKeyword   ctermfg=166 guifg=#fe8019 gui=bold term=bold
+hi jsClassDefinition  ctermfg=NONE guifg=NONE
+hi! link jsxComponentName GruvboxAqua
+hi! link jsxPunct GruvboxBlueBold
+hi! link jsxCloseString GruvboxBlueBold
+hi! link jsxAttrib GruvboxBlue
 
 " Better python highlighting
 " Heavily based on JetBrains Darcula

@@ -17,6 +17,7 @@
     "workbench.colorCustomizations": {
         "terminal.ansiBlack": "#737373"
     },
-    "workbench.colorTheme": "Darcula Pycharm with Light GUI",
-    "files.autoSave": "afterDelay"
+    "workbench.colorTheme": "One Dark Pro",
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false
 }
