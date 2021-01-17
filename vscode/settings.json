@@ -10,14 +10,35 @@
     "python.autoComplete.extraPaths": [
         "./src"
     ],
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
     "python.jediEnabled": false,
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "/Users/fdooch/src/.venv/bin/python",
     "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs/",
     "workbench.colorCustomizations": {
         "terminal.ansiBlack": "#737373"
     },
+    "files.autoSave": "onFocusChange",
+    "editor.minimap.enabled": false,
+    "python.languageServer": "Microsoft",
+    "editor.lineNumbers": "relative",
     "workbench.colorTheme": "One Dark Pro",
-    "files.autoSave": "afterDelay",
-    "editor.minimap.enabled": false
+    "eslint.nodePath": "./node_modules",
+    "php.validate.executablePath": "/usr/bin/php",
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+            "type": "php",
+            "request": "launch",
+            "name": "Run using PHP executable",
+            "program": "${file}",
+            "runtimeExecutable": "/usr/bin/php"
+            },
+        ]
+    },
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "python.linting.enabled": false,
+    "editor.rulers": [
+        88,
+        120,
+    ],
 }

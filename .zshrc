@@ -33,3 +33,5 @@ bindkey '^[[B' history-substring-search-down
 
 [[ -f ~/.aliases ]] && source ~/.aliases
 [[ -f ~/.aliases_local ]] && source ~/.aliases_local
+
+export PATH="$HOME/.poetry/bin:$PATH"
