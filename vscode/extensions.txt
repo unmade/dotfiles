@@ -1,11 +1,14 @@
+bradlc.vscode-tailwindcss
+DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 garytyler.darcula-pycharm
 lextudio.restructuredtext
+magicstack.edgedb
 magicstack.MagicPython
 ms-azuretools.vscode-docker
 ms-python.python
-ms-vscode.Theme-TomorrowKit
+ms-python.vscode-pylance
+ms-toolsai.jupyter
 njpwerner.autodocstring
 npxms.hide-gitignored
-yzhang.markdown-all-in-one
-zhuangtongfa.material-theme
+vscodevim.vim

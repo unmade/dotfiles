@@ -94,7 +94,7 @@ let g:lsp_textprop_enabled = 1
 
 " https://github.com/ervandew/supertab
 if executable('clangd')
-    "au FileType c call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+    au FileType c call SuperTabSetDefaultCompletionType("<c-x><c-o>")
     au User lsp_setup call lsp#register_server({
         \ 'name': 'clangd',
         \ 'cmd': {server_info->[
