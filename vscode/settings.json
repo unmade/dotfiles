@@ -7,6 +7,8 @@
     "autoDocstring.docstringFormat": "google",
     "autoDocstring.startOnNewLine": true,
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "explorer.openEditors.visible": 0,
+    "explorer.outline.visible": 0,
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.autoComplete.extraPaths": [
         "./src"
@@ -20,7 +22,7 @@
     "editor.minimap.enabled": false,
     "python.languageServer": "Pylance",
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "fifties",
     "eslint.nodePath": "./node_modules",
     "php.validate.executablePath": "/usr/bin/php",
     "launch": {
@@ -50,12 +52,14 @@
     "[javascript]": {
         "editor.rulers": [
             100
-        ]
+        ],
+        "editor.tabSize": 2
     },
     "[javascriptreact]": {
         "editor.rulers": [
             100
-        ]
+        ],
+        "editor.tabSize": 2
     },
     "python.workspaceSymbols.exclusionPatterns": [
         "**/site-packages/**",
@@ -72,5 +76,8 @@
         "./src"
     ],
     "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "pylance.insidersChannel": "daily",
+    "python.analysis.diagnosticMode": "workspace",
+    "editor.detectIndentation": false
 }

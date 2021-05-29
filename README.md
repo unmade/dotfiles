@@ -22,6 +22,12 @@ To create symlinks in your home directory run:
 
 > This will create symlink for the dotfiles in the repo
 
+To install vim plugins open vim and run:
+
+```bash
+:PlugInstall
+```
+
 ### Next steps
 
 By default, [.gitconfig](.gitconfig) doesn't contain user section.
