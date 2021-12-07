@@ -22,7 +22,6 @@
     "editor.minimap.enabled": false,
     "python.languageServer": "Pylance",
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "fifties",
     "eslint.nodePath": "./node_modules",
     "php.validate.executablePath": "/usr/bin/php",
     "launch": {
@@ -66,12 +65,9 @@
         "**/.venv/**",
         "**/.tox/**"
     ],
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "python.analysis.extraPaths": [
         "./src"
     ],
@@ -79,5 +75,8 @@
     "files.trimFinalNewlines": true,
     "pylance.insidersChannel": "daily",
     "python.analysis.diagnosticMode": "workspace",
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "workbench.tree.indent": 16,
+    "workbench.colorTheme": "fifties",
+    "python.defaultInterpreterPath": "/usr/bin/python3"
 }
