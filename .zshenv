@@ -13,3 +13,4 @@ fi
 
 export CLICOLOR=1
 export PATH
+. "$HOME/.cargo/env"
